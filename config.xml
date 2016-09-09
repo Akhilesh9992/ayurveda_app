@@ -26,7 +26,7 @@
   <plugin name="org.apache.cordova.dialogs" spec="0.2.10" source="pgb" />
   <gap:plugin name="cordova-plugin-file" source="npm" />
 <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
- <preference name="phonegap-version" value="cli-5.2.0" />
+ <preference name="phonegap-version" value="3.7.0" />
   <gap:plugin name="org.pushandplay.cordova.apprate" />
   <preference name="fullscreen" value="true" />
   <icon src="icon.png"/>
