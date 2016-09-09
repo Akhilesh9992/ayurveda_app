@@ -52,3 +52,12 @@ function getFormattedDate(input){
    
 }
 
+function getDisplayAyurvedaList(){
+	headerBackBtn=defaultPagePath+'headerHtml.html';
+		pgRef=defaultPagePath+'/'+'index.html';
+	
+	j('#mainHeader').load(headerBackBtn);
+		j('#mainContainer').load(pgRef);
+
+}
+
