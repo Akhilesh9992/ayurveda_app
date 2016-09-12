@@ -720,7 +720,7 @@ html {
     padding:  0;
 }
 .modal-dialog {
-    margin-top:  100px;
+    /*margin-top:  100px;*/
 }
 .modal-backdrop.fade {
     opacity:  .9;
@@ -738,7 +738,7 @@ html {
 }
 .modal-header {
     padding:  11px 15px;
-     background-color:  #1300ff!important;
+     /*background-color:  #1300ff!important;*/
      color:  #fff;
 }
 .close-btn {
@@ -1625,3 +1625,5 @@ html {
     background-color: #efefef;
     text-align: center;
 }
+
+

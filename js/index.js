@@ -12,7 +12,7 @@ document.addEventListener("deviceready",loaded,false);
 		headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'HomePage/'+'homePage.html';
 	
-	j('#mainHeader').load(headerBackBtn);
+	/*j('#mainHeader').load(headerBackBtn);*/
 		j('#mainContainer').load(pgRef);
 
  }
@@ -59,5 +59,6 @@ function getDisplayAyurvedaList(){
 	j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
 
+	appPageHistory.push(headerBackBtn);
 }
 

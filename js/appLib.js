@@ -51,38 +51,29 @@ var app = {
 
 
 function goBack() {
-	var currentUser=getUserID();
 	
-	var loginPath=defaultPagePath+'loginPage.html';
-	var headerBackBtn=defaultPagePath+'backbtnPage.html';
-	var headerCatMsg=defaultPagePath+'categoryMsgPage.html';
-	
-	if(currentUser==''){
-		j('#mainContainer').load(loginPath);
-	}else{
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
 		var historylength=appPageHistory.length;
+		console.log("historylength0 "+historylength);
 		var goToPage=appPageHistory[historylength-2];
+		console.log("historylength1 "+historylength);
 
-		if(goToPage!==null && goToPage==loginPath){
-			return 0;
-		}else{
-			appPageHistory.pop();
-			var len=appPageHistory.length;
-			var pg=appPageHistory[len-1];
-			if(pg=="app/pages/addAnExpense.html" 
-				|| pg=="app/pages/addTravelSettlement.html"){
-				
-				j('#mainHeader').load(headerBackBtn);
-			}else if(pg=="app/pages/category.html"){
-				
-				j('#mainHeader').load(headerCatMsg);
-			}
-			if(!(pg==null)){ 
-				j('#mainContainer').load(pg);
-			}
+		 if(historylength==1){
+
+			console.log("historylength inside if "+appPageHistory.length);
+			
+			headerBackBtn=defaultPagePath+'headerHtml.html';
+			pgRef=defaultPagePath+'HomePage/'+'homePage.html';
+	
+			j('#mainHeader').load(headerBackBtn);
+			j('#mainContainer').load(pgRef);
+			//reset
+			appPageHistory=[];
+			console.log("historylength inside if afeter reset"+appPageHistory.length);
+		}else {
+
 		}
-	}
+	
 	}
  
 function goBackEvent() {
