@@ -54,7 +54,7 @@ function getFormattedDate(input){
 
 function getDisplayAyurvedaList(){
 	//headerBackBtn=defaultPagePath+'headerHtml.html';
-		pgRef=defaultPagePath+'/'+'index.html';
+		pgRef=defaultPagePath+'index.html';
 	alert("pgRef 1"+pgRef);
 	//j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
@@ -65,7 +65,7 @@ function getDisplayAyurvedaList(){
 
 function getDisplayDiseasesList(){
 	//headerBackBtn=defaultPagePath+'headerHtml.html';
-		pgRef=defaultPagePath+'/by_Diseases/'+'diseases_index.html';
+		pgRef=defaultPagePath+'by_Diseases/'+'diseases_index.html';
 	alert("pgRef 2"+pgRef);
 	//j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
@@ -75,7 +75,7 @@ function getDisplayDiseasesList(){
 
 function getDisplaynaturalBeautyList(){
 	//headerBackBtn=defaultPagePath+'headerHtml.html';
-		pgRef=defaultPagePath+'/by_beautiful/'+'natural_beauti_index.html';
+		pgRef=defaultPagePath+'by_beautiful/'+'natural_beauti_index.html';
 	alert("pgRef 3"+pgRef);
 	//j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
