@@ -19,6 +19,7 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady, false);
     },
 	onDeviceReady: function() {
+		alert("ondeviceready 1");
        		  if (navigator.notification) { // Override default HTML alert with native dialog
 			  window.alert = function (message) {
 				  navigator.notification.alert(
@@ -30,6 +31,7 @@ var app = {
 			  };
 		  }
 		  document.addEventListener("backbutton", function(e){
+		  	alert("ondeviceready 2");
 			 goBackEvent();
 		  }, false);
 		  validateValidMobileUser();
