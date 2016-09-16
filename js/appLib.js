@@ -76,12 +76,12 @@ function goBack() {
 	}
  
 function goBackEvent() {
-
+		alert("goBackEvent");
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
 		var historylength=appPageHistory.length;
-		console.log("historylength0 "+historylength);
+		alert("historylength0 "+historylength);
 		var goToPage=appPageHistory[historylength-2];
-		console.log("historylength1 "+historylength);
+		alert("historylength1 "+historylength);
 
 		 if(historylength==1){
 
@@ -94,13 +94,14 @@ function goBackEvent() {
 			j('#mainContainer').load(pgRef);
 			//reset
 			appPageHistory=[];
-			console.log("historylength inside if afeter reset"+appPageHistory.length);
+		alert("historylength inside if afeter reset"+appPageHistory.length);
 		}else {
 
 		}
 }
 
 function onConfirmExit(button) {
+	alert("onconfirmexit");
     if (button == 2) { //If User select a No, then return back;
         return;
     } else {
