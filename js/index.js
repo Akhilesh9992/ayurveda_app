@@ -3,9 +3,6 @@ var defaultPagePath='app/pages/';
 var headerMsg = "Expenzing";
 var pgRef;
 var headerBackBtn;
-j(document).ready(function(){ 
-document.addEventListener("deviceready",loaded,false);
-});
 
 
  function init() {
@@ -17,21 +14,7 @@ document.addEventListener("deviceready",loaded,false);
 
  }
  
-  function loaddate(){
-	j(function(){
-		window.prettyPrint && prettyPrint();
-		j('.dp1').datepicker({
-			format: 'dd-mm-yyyy'
-		});		
-	});
-
-	j('.dp1').on('changeDate', function(ev){
-		j(this).datepicker('hide');
-	});
-
-}
- 
-
+  
 function isJsonString(str) {
 	try {
 		JSON.parse(str);
@@ -40,22 +23,11 @@ function isJsonString(str) {
 	}
 	return true;
 }
-				
- 
 
-function getFormattedDate(input){
-    var inputDate=input.split('-');
-    var month = inputDate[1];
-    var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-
-    return inputDate[0]+"-"+months[(month-1)]+"-"+inputDate[2];
-   
-}
 
 function getDisplayAyurvedaList(){
 	//headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'index.html';
-	alert("pgRef 1"+pgRef);
 	//j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
 
@@ -66,7 +38,6 @@ function getDisplayAyurvedaList(){
 function getDisplayDiseasesList(){
 	//headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'by_Diseases/'+'diseases_index.html';
-	alert("pgRef 2"+pgRef);
 	//j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
 
@@ -76,7 +47,6 @@ function getDisplayDiseasesList(){
 function getDisplaynaturalBeautyList(){
 	//headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'by_beautiful/'+'natural_beauti_index.html';
-	alert("pgRef 3"+pgRef);
 	//j('#mainHeader').load(headerBackBtn);
 		j('#mainContainer').load(pgRef);
 
