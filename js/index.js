@@ -59,3 +59,8 @@ function getDisplaynaturalBeautyList(){
 
 	appPageHistory.push(pgRef);
 }
+
+function rateus(){
+
+	window.open("market://details?id=air.HanumanChalisaV1.A5","_system");
+}
