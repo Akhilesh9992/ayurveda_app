@@ -49,7 +49,7 @@ display: block;
 padding: 11px 5px 11px 5px;
 border-left: 5px solid #8AA1B6;
 border-right: 5px solid #8AA1B6;
-color: #fff;
+color: #000000;
 text-decoration: none;
 width: auto;
 }
@@ -95,5 +95,5 @@ text-decoration : none;
     height: initial;
 }
 
-#menu12 li { background: #09de25; }
+#menu12 li { background: #f6f6f6; }
 #menu12 li:nth-child(odd) { background: #6de226; }
