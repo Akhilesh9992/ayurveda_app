@@ -111,26 +111,18 @@
                <span class="glyphicon glyphicon-user">
                </span>&nbsp; About Us </a> 
             </li>
-            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
-               <span class="glyphicon glyphicon-earphone">
-               </span>&nbsp; Contact Us </a> 
-            </li>
             <li class="divider"></li>
-            <li> <a href="market://details?id=air.HanumanChalisaV1.A5" id="rate-app" data-toggle="modal" data-target="#contact" > 
+            <li> <a onclick="rateus();" data-toggle="modal" data-target="#contact" > 
                <span class="glyphicon glyphicon-earphone">
                </span>&nbsp; Rate Us </a> 
             </li>
-            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
+            <li> <a href="#" onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})" data-toggle="modal" data-target="#contact"> 
                <span class="glyphicon glyphicon-earphone">
                </span>&nbsp; Share App </a> 
             </li>
-            <li> <a href="https://play.google.com/store/apps/details?id=air.HanumanChalisaV1.A5" data-toggle="modal" data-target="#contact"> 
+            <li> <a onclick="usefullApps();" data-toggle="modal" data-target="#contact"> 
                <span class="glyphicon glyphicon-earphone">
                </span>&nbsp; Search More Usefull Apps </a> 
-            </li>
-            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
-               <span class="glyphicon glyphicon-earphone">
-               </span>&nbsp; Help </a> 
             </li>
          </ul>
       </aside>

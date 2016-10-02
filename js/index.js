@@ -64,3 +64,13 @@ function rateus(){
 
 	window.open("market://details?id=air.HanumanChalisaV1.A5","_system");
 }
+function usefullApps(){
+
+	window.open("https://play.google.com/store/search?q=digitalhawk2016&hl=en","_system");
+}
+
+function shareAppsViaWhatsapp(){
+
+window.open("'whatsapp://send?text=hello world'", "_system");
+
+}

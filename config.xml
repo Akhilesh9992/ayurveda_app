@@ -36,6 +36,8 @@
   <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
   <gap:plugin name="org.pushandplay.cordova.apprate" />
   
+  <access origin="whatsapp:*" launch-external="yes" />
+  <allow-intent href="whatsapp:*" />
   <icon src="icon.png"/>
   <platform name="android">
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>

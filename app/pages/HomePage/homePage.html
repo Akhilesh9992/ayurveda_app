@@ -42,29 +42,21 @@
                <span class="glyphicon glyphicon-user">
                </span>&nbsp; About Us </a> 
             </li>
-            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
-               <span class="glyphicon glyphicon-earphone">
-               </span>&nbsp; Contact Us </a> 
-            </li>
             <li class="divider"></li>
             <li> <a id="rate-app" data-toggle="modal" data-target="#contact" 
             onclick="rateus();"> 
                <span class="glyphicon glyphicon-earphone">
                </span>&nbsp; Rate Us </a> 
             </li>
-            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
+            <li> <a href="#" onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})" data-toggle="modal" data-target="#contact"> 
                <span class="glyphicon glyphicon-earphone">
                </span>&nbsp; Share App </a> 
             </li>
-            <li> <a id="more-app" data-toggle="modal" data-target="#contact"> 
+            <li> <a onclick="usefullApps();" data-toggle="modal" data-target="#contact"> 
                <span class="glyphicon glyphicon-earphone">
                </span>&nbsp; Search More Usefull Apps </a> 
             </li>
-            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
-               <span class="glyphicon glyphicon-earphone">
-               </span>&nbsp; Help </a> 
-            </li>
-         </ul>
+          </ul>
       </aside>
       <!-- <center> -->
       <div class="container" >
