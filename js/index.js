@@ -70,7 +70,7 @@ function usefullApps(){
 }
 
 function shareAppsViaWhatsapp(){
-alert("inside method");
-window.open("'whatsapp://send?text=hello world'", "_system");
+
+window.open("whatsapp://send?text=hello world", "_system");
 
 }
