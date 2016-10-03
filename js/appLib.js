@@ -31,11 +31,7 @@ var app = {
 			  };
 		  }
 
-		  document.addEventListener("backbutton", function(e){
-			 onBackKeyDown();
-		  }, false);
-		
-		  },
+		 },
 
 	receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -49,12 +45,6 @@ var app = {
     }
 };
 
-
-function onBackKeyDown() 
-{
-	alert("on backbutton click");
- navigator.app.exitApp();
-}
 
 function goBack() {
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
@@ -82,7 +72,6 @@ function goBack() {
 	}
  
 function goBackEvent() {
-		alert("goBackEvent");
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
 		var historylength=appPageHistory.length;
 		alert("historylength0 "+historylength);

@@ -7,11 +7,6 @@ var headerBackBtn;
 
  function init() {
  	
- 	document.addEventListener("backbutton", function (e) {
-        e.preventDefault(); 
-    navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
-    }, false );
-    
     
 		headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'HomePage/'+'homePage.html';
