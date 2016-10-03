@@ -4,7 +4,7 @@ var jsonBEArr = [];
 var budgetingStatus;
 var AppRate, Locales, exec;
 
-
+document.addEventListener("backbutton", onBackKeyDown, true);
 
 var app = {
     // Application Constructor
@@ -19,7 +19,7 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady, true);
     },
 	onDeviceReady: function() {
-		alert("ondeviceready 1");
+		
        		  if (navigator.notification) { // Override default HTML alert with native dialog
 			  window.alert = function (message) {
 				  navigator.notification.alert(
@@ -30,12 +30,11 @@ var app = {
 				  );
 			  };
 		  }
+
 		  document.addEventListener("backbutton", function(e){
-		  	alert("ondeviceready 2");
-			 goBackEvent();
+			 onBackKeyDown();
 		  }, false);
-		  validateValidMobileUser();
-		  
+		
 		  },
 
 	receivedEvent: function(id) {
@@ -51,6 +50,11 @@ var app = {
 };
 
 
+function onBackKeyDown() 
+{
+	alert("on backbutton click");
+ navigator.app.exitApp();
+}
 
 function goBack() {
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
