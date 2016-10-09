@@ -11,6 +11,7 @@
   <preference name="show-splash-screen-spinner" value="true" />
   <preference name="auto-hide-splash-screen" value="true" />
   <preference name="phonegap-version" value="3.7.0" />
+  <preference name="orientation" value="portrait" />
   
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
   <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
