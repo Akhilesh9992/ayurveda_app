@@ -1,50 +1,5 @@
 var appPageHistory=[];
-var jsonToBeSend=new Object();
-var jsonBEArr = [];
-var budgetingStatus;
 var AppRate, Locales, exec;
-
-document.addEventListener("backbutton", onBackKeyDown, true);
-
-var app = {
-    // Application Constructor
-    initialize: function() {
-		this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-		document.addEventListener("deviceready", this.onDeviceReady, true);
-    },
-	onDeviceReady: function() {
-		
-       		  if (navigator.notification) { // Override default HTML alert with native dialog
-			  window.alert = function (message) {
-				  navigator.notification.alert(
-					  message,   	 // message
-					  null,       	// callback
-					  "Alert", 	   // title
-					  'OK'        // buttonName
-				  );
-			  };
-		  }
-
-		 },
-
-	receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    }
-};
-
 
 function goBack() {
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
