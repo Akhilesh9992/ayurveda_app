@@ -7,8 +7,8 @@ var headerBackBtn;
 
  function init() {
  	alert("init");
-    document.addEventListener("deviceready", onDeviceReady, false);
- 	document.addEventListener("backbutton", backCall, false);
+   
+ 	
 
 		headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'HomePage/'+'homePage.html';
@@ -162,7 +162,10 @@ function backCall(e){
     }
 
     function onDeviceReady() {
-    	alert("device ready");
+    	headerBackBtn=defaultPagePath+'headerHtml.html';
+      pgRef=defaultPagePath+'HomePage/'+'homePage.html';
+      j('#mainContainer').load(pgRef);
+      
       document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
 
@@ -174,3 +177,4 @@ function backCall(e){
     }
 
     document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("backbutton", backCall, false);
