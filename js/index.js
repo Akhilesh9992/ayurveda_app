@@ -2,7 +2,7 @@ var j = jQuery.noConflict();
 var defaultPagePath='app/pages/';
 var pgRef;
 var headerBackBtn;
-
+var isAutoshowInterstitial = false;
 
  function init() {
  	alert("init");
