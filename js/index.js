@@ -5,9 +5,8 @@ var headerBackBtn;
 var isAutoshowInterstitial = false;
 
  function init() {
- 	alert("init");
-   
- 		headerBackBtn=defaultPagePath+'headerHtml.html';
+ 	
+    headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'HomePage/'+'homePage.html';
 	
 	/*j('#mainHeader').load(headerBackBtn);*/
