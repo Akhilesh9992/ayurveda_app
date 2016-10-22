@@ -1,6 +1,5 @@
 var j = jQuery.noConflict();
 var defaultPagePath='app/pages/';
-var headerMsg = "Expenzing";
 var pgRef;
 var headerBackBtn;
 
@@ -82,9 +81,8 @@ function backCall(e){
 // pormt when back button is pressed on home screen
   e.preventDefault();
   var action=confirm("Do you want to Exit");
-  alert("backcall");
   if(action){
-    alert("1");
+    
       navigator.app.exitApp();
   }
 }
@@ -93,6 +91,7 @@ function backCall(e){
  var isAppForeground = true;
 
     function initAds() {
+      alert("initAds");
       if (admob) {
         var adPublisherIds = {
           ios : {
@@ -165,7 +164,7 @@ function backCall(e){
     	headerBackBtn=defaultPagePath+'headerHtml.html';
       pgRef=defaultPagePath+'HomePage/'+'homePage.html';
       j('#mainContainer').load(pgRef);
-      
+
       document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
 
