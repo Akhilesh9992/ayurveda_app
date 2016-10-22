@@ -6,7 +6,7 @@ var headerBackBtn;
 
 
  function init() {
- 	
+ 	alert("init");
     document.addEventListener("deviceready", onDeviceReady, false);
  	document.addEventListener("backbutton", backCall, false);
 
