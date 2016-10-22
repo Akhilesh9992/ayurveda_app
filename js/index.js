@@ -175,5 +175,5 @@ function backCall(e){
       admob.requestInterstitialAd();
     }
 
-    document.addEventListener("deviceready", onDeviceReady, false);
+   // document.addEventListener("deviceready", onDeviceReady, false);
     document.addEventListener("backbutton", backCall, false);
