@@ -159,7 +159,7 @@ function backCall(e){
 
     function onDeviceReady() {
     	
-
+      init();
       document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
 
@@ -167,7 +167,9 @@ function backCall(e){
       admob.createBannerView();
 
       // request an interstitial
-      admob.requestInterstitialAd();
+      admob.requestInterstitialAd({
+            autoShowInterstitial: isAutoshowInterstitial
+        });
 
 
     }
