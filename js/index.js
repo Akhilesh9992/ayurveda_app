@@ -7,9 +7,7 @@ var headerBackBtn;
  function init() {
  	alert("init");
    
- 	
-
-		headerBackBtn=defaultPagePath+'headerHtml.html';
+ 		headerBackBtn=defaultPagePath+'headerHtml.html';
 		pgRef=defaultPagePath+'HomePage/'+'homePage.html';
 	
 	/*j('#mainHeader').load(headerBackBtn);*/
@@ -91,7 +89,6 @@ function backCall(e){
  var isAppForeground = true;
 
     function initAds() {
-      alert("initAds");
       if (admob) {
         var adPublisherIds = {
           ios : {
@@ -161,9 +158,7 @@ function backCall(e){
     }
 
     function onDeviceReady() {
-    	headerBackBtn=defaultPagePath+'headerHtml.html';
-      pgRef=defaultPagePath+'HomePage/'+'homePage.html';
-      j('#mainContainer').load(pgRef);
+    	
 
       document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
@@ -173,7 +168,9 @@ function backCall(e){
 
       // request an interstitial
       admob.requestInterstitialAd();
+
+
     }
 
-   // document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready", onDeviceReady, false);
     document.addEventListener("backbutton", backCall, false);
