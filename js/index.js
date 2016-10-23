@@ -76,6 +76,7 @@ window.open("whatsapp://send?text=hello world", "_system");
 */
 function backCall(e){
 // pormt when back button is pressed on home screen
+alert("e"+e);
   e.preventDefault();
   var action=confirm("Do you want to Exit");
   if(action){
@@ -83,7 +84,7 @@ function backCall(e){
       navigator.app.exitApp();
   }
 }
-
+/*
 
  var isAppForeground = true;
 
@@ -156,22 +157,22 @@ function backCall(e){
 
       document.addEventListener("pause", onPause, false);
       document.addEventListener("resume", onResume, false);
-    }
+    }*/
 
     function onDeviceReady() {
     	
       init();
-      document.removeEventListener('deviceready', onDeviceReady, false);
-      initAds();
+     // document.removeEventListener('deviceready', onDeviceReady, false);
+     // initAds();
 
       // display a banner at startup
-      admob.createBannerView();
+     // admob.createBannerView();
 
       // request an interstitial
-      admob.requestInterstitialAd();
+     // admob.requestInterstitialAd();
 
 
     }
 
-    document.addEventListener("deviceready", onDeviceReady, false);
+   // document.addEventListener("deviceready", onDeviceReady, false);
     document.addEventListener("backbutton", backCall, false);
