@@ -29,9 +29,9 @@ function goBack() {
 function goBackEvent() {
 		//To check if the page that needs to be displayed is login page. So 'historylength-2'
 		var historylength=appPageHistory.length;
-		alert("historylength0 "+historylength);
+		//alert("historylength0 "+historylength);
 		var goToPage=appPageHistory[historylength-2];
-		alert("historylength1 "+historylength);
+		//alert("historylength1 "+historylength);
 
 		 if(historylength==1){
 
@@ -44,7 +44,7 @@ function goBackEvent() {
 			j('#mainContainer').load(pgRef);
 			//reset
 			appPageHistory=[];
-		alert("historylength inside if afeter reset"+appPageHistory.length);
+		//alert("historylength inside if afeter reset"+appPageHistory.length);
 		return 1;
 		}else {
 		return 2;
