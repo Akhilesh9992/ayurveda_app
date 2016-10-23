@@ -76,7 +76,8 @@ window.open("whatsapp://send?text=hello world", "_system");
 */
 function backCall(e){
 // pormt when back button is pressed on home screen
-alert("e"+e);
+var value1 = goBackEvent();
+alert(" or "+value1);
   e.preventDefault();
   var action=confirm("Do you want to Exit");
   if(action){

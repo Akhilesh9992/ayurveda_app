@@ -45,8 +45,9 @@ function goBackEvent() {
 			//reset
 			appPageHistory=[];
 		alert("historylength inside if afeter reset"+appPageHistory.length);
+		return 1;
 		}else {
-
+		return 2;
 		}
 }
 
