@@ -108,6 +108,7 @@ function backCall(e){
           tappxIdiOs:       "/XXXXXXXXX/Pub-XXXX-iOS-IIII",
           tappxIdAndroid:   "/XXXXXXXXX/Pub-XXXX-Android-AAAA",
           tappxShare:       0.5,
+          autoShowInterstitial: false,
 
         });
 
@@ -121,6 +122,7 @@ function backCall(e){
     function onAdLoaded(e) {
       if (isAppForeground) {
         if (e.adType === admob.AD_TYPE.INTERSTITIAL) {
+          admob.showInterstitialAd();
           console.log("An interstitial has been loaded and autoshown. If you want to load the interstitial first and show it later, set 'autoShowInterstitial: false' in admob.setOptions() and call 'admob.showInterstitialAd();' here");
         } else if (e.adType === admob.AD_TYPE_BANNER) {
           console.log("New banner received");
@@ -166,9 +168,7 @@ function backCall(e){
       admob.createBannerView();
 
       // request an interstitial
-      admob.requestInterstitialAd({
-            autoShowInterstitial: isAutoshowInterstitial
-        });
+      admob.requestInterstitialAd();
 
 
     }
