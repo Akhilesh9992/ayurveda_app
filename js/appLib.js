@@ -32,9 +32,9 @@ function goBackEvent() {
 		//alert("historylength0 "+historylength);
 		var goToPage=appPageHistory[historylength-2];
 		//alert("historylength1 "+historylength);
-
+		alert("goback");
 		 if(historylength==1){
-
+		 alert("return 1");
 			console.log("historylength inside if "+appPageHistory.length);
 			
 			headerBackBtn=defaultPagePath+'headerHtml.html';
@@ -47,8 +47,10 @@ function goBackEvent() {
 		//alert("historylength inside if afeter reset"+appPageHistory.length);
 		return 1;
 		}else {
+			alert("return 2");
 		return 2;
 		}
+		alert("return nothing");
 }
 
 function onConfirmExit(button) {
