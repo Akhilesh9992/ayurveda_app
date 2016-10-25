@@ -79,10 +79,10 @@ function backCall(e){
 var value1 = goBackEvent();
 //alert(" or "+value1);
   e.preventDefault();
-  alert("value1 == 1"+value1 == 1);
+  
   if(value1 == 1){
-    alert("1");
-  }else{
+    
+  }else if(value1 == 2){
   var action=confirm("Do you want to Exit");
   if(action){
     
