@@ -80,7 +80,16 @@ function backCall(e){
 var value1 = goBackEvent();
 //alert(" or "+value1);
   e.preventDefault();
+  if (e == 2) { //If User select a No, then return back;
+        headerBackBtn=defaultPagePath+'headerHtml.html';
+      pgRef=defaultPagePath+'HomePage/'+'homePage.html';
   
+      j('#mainHeader').load(headerBackBtn);
+      j('#mainContainer').load(pgRef);
+      //reset
+      appPageHistory=[];
+        return;
+    }
   if(value1 == 1){
     
   }else if(value1 == 2){
@@ -172,9 +181,9 @@ var value1 = goBackEvent();
     function onDeviceReady() {
     	
       init();
-     // document.addEventListener("backbutton", backCall, false);
-navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
-    }, false );
+      document.addEventListener("backbutton", backCall, false);
+//navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
+  //  }, false );
      // document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
 
