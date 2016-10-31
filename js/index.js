@@ -118,7 +118,7 @@ var value1 = goBackEvent();
           tappxIdiOs:       "/XXXXXXXXX/Pub-XXXX-iOS-IIII",
           tappxIdAndroid:   "/XXXXXXXXX/Pub-XXXX-Android-AAAA",
           tappxShare:       0.5,
-          autoShowInterstitial: false,
+          autoShowInterstitial: false
 
         });
 
