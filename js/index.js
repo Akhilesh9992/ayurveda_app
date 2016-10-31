@@ -117,8 +117,9 @@ var value1 = goBackEvent();
           interstitialAdId: admobid.interstitial,
           tappxIdiOs:       "/XXXXXXXXX/Pub-XXXX-iOS-IIII",
           tappxIdAndroid:   "/XXXXXXXXX/Pub-XXXX-Android-AAAA",
-          tappxShare:       0.5,
-          autoShowInterstitial: true
+          tappxShare:       0.5
+          //,
+          //autoShowInterstitial: true
 
         });
 
@@ -132,7 +133,7 @@ var value1 = goBackEvent();
     function onAdLoaded(e) {
       if (isAppForeground) {
         if (e.adType === admob.AD_TYPE.INTERSTITIAL) {
-          admob.showInterstitialAd();
+          //admob.showInterstitialAd();
           console.log("An interstitial has been loaded and autoshown. If you want to load the interstitial first and show it later, set 'autoShowInterstitial: false' in admob.setOptions() and call 'admob.showInterstitialAd();' here");
         } else if (e.adType === admob.AD_TYPE_BANNER) {
           console.log("New banner received");
