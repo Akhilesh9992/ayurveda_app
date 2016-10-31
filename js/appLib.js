@@ -47,7 +47,13 @@ function goBackEvent() {
 		//alert("historylength inside if afeter reset"+appPageHistory.length);
 		return 1;
 		}else {
-			
+			headerBackBtn=defaultPagePath+'headerHtml.html';
+			pgRef=defaultPagePath+'HomePage/'+'homePage.html';
+	
+			j('#mainHeader').load(headerBackBtn);
+			j('#mainContainer').load(pgRef);
+			//reset
+			appPageHistory=[];
 		return 2;
 		}
 		
