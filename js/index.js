@@ -85,7 +85,8 @@ var value1 = goBackEvent();
   e.preventDefault();
   if(value1 == 1){
   alert("b"); 
-  window.location.href = 'index.html'; 
+ // window.location.href = '../index.html';
+  window.history.back(); 
   }else if(value1 == 2){
 alert("c");
   var action=confirm("Do you want to Exit");
