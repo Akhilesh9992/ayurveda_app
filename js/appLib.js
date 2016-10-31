@@ -54,12 +54,26 @@ function goBackEvent() {
 }
 
 function onConfirmExit(button) {
-	
+	var value1 = goBackEvent();
+//alert(" or "+value1);
+  e.preventDefault();
+  
+  if(value1 == 1){
+    
+  }else if(value1 == 2){
     if (button == 2) { //If User select a No, then return back;
+        headerBackBtn=defaultPagePath+'headerHtml.html';
+			pgRef=defaultPagePath+'HomePage/'+'homePage.html';
+	
+			j('#mainHeader').load(headerBackBtn);
+			j('#mainContainer').load(pgRef);
+			//reset
+			appPageHistory=[];
         return;
     } else {
         navigator.app.exitApp(); // If user select a Yes, quit from the app.
     }
+}
 }
 
 

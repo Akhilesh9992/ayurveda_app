@@ -173,7 +173,8 @@ var value1 = goBackEvent();
     	
       init();
      // document.addEventListener("backbutton", backCall, false);
-
+navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
+    }, false );
      // document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
 
