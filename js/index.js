@@ -84,7 +84,8 @@ var value1 = goBackEvent();
 //alert(" or "+value1);
   e.preventDefault();
   if(value1 == 1){
-  alert("b");  
+  alert("b"); 
+  window.location.href = 'index.html'; 
   }else if(value1 == 2){
 alert("c");
   var action=confirm("Do you want to Exit");
