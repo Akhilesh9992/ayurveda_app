@@ -184,7 +184,7 @@ var value1 = goBackEvent();
       document.addEventListener("backbutton", backCall, false);
 //navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
   //  }, false );
-     // document.removeEventListener('deviceready', onDeviceReady, false);
+      document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
 
       // display a banner at startup
