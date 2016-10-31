@@ -12,6 +12,8 @@ var isAutoshowInterstitial = false;
 	/*j('#mainHeader').load(headerBackBtn);*/
 		j('#mainContainer').load(pgRef);
 
+    document.addEventListener("deviceready", onDeviceReady, false);
+
  }
  
   
@@ -80,23 +82,13 @@ function backCall(e){
 var value1 = goBackEvent();
 //alert(" or "+value1);
   e.preventDefault();
-  if (e == 2) { //If User select a No, then return back;
-        headerBackBtn=defaultPagePath+'headerHtml.html';
-      pgRef=defaultPagePath+'HomePage/'+'homePage.html';
-  
-      j('#mainHeader').load(headerBackBtn);
-      j('#mainContainer').load(pgRef);
-      //reset
-      appPageHistory=[];
-        return;
-    }
   if(value1 == 1){
     
   }else if(value1 == 2){
-    
+    init();
   var action=confirm("Do you want to Exit");
   if(action){
-     
+     document.addEventListener("deviceready", onDeviceReady, false);
       navigator.app.exitApp();
   }  
   }
@@ -196,5 +188,5 @@ var value1 = goBackEvent();
 
     }
 
-  document.addEventListener("deviceready", onDeviceReady, false);
+ // document.addEventListener("deviceready", onDeviceReady, false);
     //document.addEventListener("deviceready", onDeviceReady, false);
