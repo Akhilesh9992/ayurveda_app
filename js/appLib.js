@@ -32,9 +32,9 @@ function goBackEvent() {
 		//alert("historylength0 "+historylength);
 		var goToPage=appPageHistory[historylength-2];
 		//alert("historylength1 "+historylength);
-		
+		alert("1");
 		 if(historylength==1){
-		
+		alert("2");
 			console.log("historylength inside if "+appPageHistory.length);
 			
 			headerBackBtn=defaultPagePath+'headerHtml.html';
@@ -47,6 +47,7 @@ function goBackEvent() {
 		//alert("historylength inside if afeter reset"+appPageHistory.length);
 		return 1;
 		}else {
+			alert("3");
 			headerBackBtn=defaultPagePath+'headerHtml.html';
 			pgRef=defaultPagePath+'HomePage/'+'homePage.html';
 	
@@ -56,7 +57,7 @@ function goBackEvent() {
 			appPageHistory=[];
 		return 2;
 		}
-		
+		alert("4");
 }
 
 function onConfirmExit(button) {
