@@ -180,7 +180,7 @@ var value1 = goBackEvent();
 
     function onDeviceReady() {
     	
-      init();
+      
       document.addEventListener("backbutton", backCall, false);
 //navigator.notification.confirm("Are you sure want to exit from App?", onConfirmExit, "Confirmation", "Yes,No");
   //  }, false );
@@ -196,5 +196,5 @@ var value1 = goBackEvent();
 
     }
 
-  //document.addEventListener("deviceready", onDeviceReady, false);
+  document.addEventListener("deviceready", onDeviceReady, false);
     //document.addEventListener("deviceready", onDeviceReady, false);
