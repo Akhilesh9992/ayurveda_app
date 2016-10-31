@@ -75,23 +75,23 @@ window.open("whatsapp://send?text=hello world", "_system");
   }
 */
 function backCall(e){
-  alert("backbtn");
+  
 // pormt when back button is pressed on home screen
 var value1 = goBackEvent();
 //alert(" or "+value1);
   e.preventDefault();
   
   if(value1 == 1){
-    alert("1--");
+    
   }else if(value1 == 2){
-    alert("2--");
+    
   var action=confirm("Do you want to Exit");
   if(action){
-    
+      admob.showInterstitialAd();
       navigator.app.exitApp();
   }  
   }
-  alert("backbtn end--");
+  
 }
 
 
@@ -118,7 +118,7 @@ var value1 = goBackEvent();
           tappxIdiOs:       "/XXXXXXXXX/Pub-XXXX-iOS-IIII",
           tappxIdAndroid:   "/XXXXXXXXX/Pub-XXXX-Android-AAAA",
           tappxShare:       0.5,
-          autoShowInterstitial: false
+          autoShowInterstitial: true
 
         });
 

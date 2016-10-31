@@ -32,9 +32,9 @@ function goBackEvent() {
 		//alert("historylength0 "+historylength);
 		var goToPage=appPageHistory[historylength-2];
 		//alert("historylength1 "+historylength);
-		alert("goback");
+		
 		 if(historylength==1){
-		 alert("return 1");
+		
 			console.log("historylength inside if "+appPageHistory.length);
 			
 			headerBackBtn=defaultPagePath+'headerHtml.html';
@@ -50,11 +50,11 @@ function goBackEvent() {
 			alert("return 2");
 		return 2;
 		}
-		alert("return nothing");
+		
 }
 
 function onConfirmExit(button) {
-	alert("onconfirmexit");
+	
     if (button == 2) { //If User select a No, then return back;
         return;
     } else {
