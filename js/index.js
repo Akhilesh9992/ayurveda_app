@@ -93,7 +93,7 @@ var value1 = goBackEvent();
   }
   alert("backbtn end--");
 }
-/*
+
 
  var isAppForeground = true;
 
@@ -166,23 +166,24 @@ var value1 = goBackEvent();
 
       document.addEventListener("pause", onPause, false);
       document.addEventListener("resume", onResume, false);
-    }*/
+    }
 
     function onDeviceReady() {
     	
       init();
       document.addEventListener("backbutton", backCall, false);
+
      // document.removeEventListener('deviceready', onDeviceReady, false);
-     // initAds();
+      initAds();
 
       // display a banner at startup
-     // admob.createBannerView();
+      admob.createBannerView();
 
       // request an interstitial
-     // admob.requestInterstitialAd();
+      admob.requestInterstitialAd();
 
 
     }
 
    // document.addEventListener("deviceready", onDeviceReady, false);
-    
+    //document.addEventListener("deviceready", onDeviceReady, false);
