@@ -87,7 +87,7 @@ var value1 = goBackEvent();
     
   var action=confirm("Do you want to Exit");
   if(action){
-      admob.showInterstitialAd();
+     
       navigator.app.exitApp();
   }  
   }
@@ -172,7 +172,7 @@ var value1 = goBackEvent();
     function onDeviceReady() {
     	
       init();
-      document.addEventListener("backbutton", backCall, false);
+     // document.addEventListener("backbutton", backCall, false);
 
      // document.removeEventListener('deviceready', onDeviceReady, false);
       initAds();
@@ -186,5 +186,5 @@ var value1 = goBackEvent();
 
     }
 
-   // document.addEventListener("deviceready", onDeviceReady, false);
+  document.addEventListener("deviceready", onDeviceReady, false);
     //document.addEventListener("deviceready", onDeviceReady, false);
