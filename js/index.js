@@ -77,18 +77,15 @@ window.open("whatsapp://send?text=hello world", "_system");
   }
 */
 function backCall(e){
-  alert("a");
   
 // pormt when back button is pressed on home screen
 var value1 = goBackEvent();
 //alert(" or "+value1);
   e.preventDefault();
   if(value1 == 1){
-  alert("b"); 
  // window.location.href = '../index.html';
   window.history.back(); 
   }else if(value1 == 2){
-alert("c");
   var action=confirm("Do you want to Exit");
   if(action){
      document.addEventListener("deviceready", onDeviceReady, false);
